@@ -1,0 +1,232 @@
+/*index.html */
+/*heading top  */
+body {
+  background-image: url('../images/SL-110521-46540-63.jpg'); /* Replace 'background.jpg' with your image file path */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+ 
+}
+.profile1{
+    width: 4.5em;
+    height: 4.5em;
+}
+
+/*circles in body */
+.circleItem{
+padding: 5em;
+}
+
+  
+  
+
+  /*cv.html */
+  .bodyCv {
+    background-color: rgb(163, 80, 80);
+    color: white;
+    padding-top: 1em;
+    margin-top: .5em;
+    padding-bottom: 1em;
+    border-radius: .6em;
+    overflow: hidden; /* Ensure the animation doesn't overflow the container */
+    position: relative; /* Required for absolutely positioned elements */
+  }
+
+  .heart {
+    position: absolute;
+    font-size: 35px; /* Adjust size as needed */
+    animation: falling 7s linear infinite; /* Adjust timing as needed */
+  }
+
+  @keyframes falling {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(100vh);
+    }
+  }
+  .profile1{
+    width: 6em;
+    height: 6em;
+    margin-left: .6em;
+
+}
+.myname{
+    margin-top: 1em;
+}
+.decorative-line {
+    width: 80%;
+    height: 20px; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
+    border-radius: .2em;
+  }
+  
+  .decorative-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust width of individual firework */
+    height: 50px; /* Adjust height of individual firework */
+    background: radial-gradient(circle, pink, yellow,blue,purple); /* Gradient background */
+    border-radius: 10%;
+    animation: fireworkAnimation 5s infinite;
+   
+  }
+  
+  @keyframes fireworkAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(8);
+      opacity: 1;
+    }
+  }
+  .decorative-line1 {
+    width: 80%;
+    height: 20px; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
+    border-radius: .2em;
+  }
+  
+  .decorative-line1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust width of individual firework */
+    height: 50px; /* Adjust height of individual firework */
+    background: radial-gradient(circle,orange,brown,pink); /* Gradient background */
+    border-radius: 10%;
+    animation: fireworkAnimation 5s infinite;
+   
+  }
+  
+  @keyframes fireworkAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(8);
+      opacity: 1;
+    }
+  }
+  
+  .text-justify{
+    text-align: justify;
+  }
+  .abtme {
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    overflow: hidden; /* Ensure the animation doesn't overflow the container */
+   margin-top: 1em;
+    
+  }
+
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+    animation: falling 6s linear infinite; /* Adjust timing as needed */
+  }
+
+  
+  .message {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  @keyframes falling {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+  @keyframes fallingBalls {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+   .decorative-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust width of individual firework */
+    height: 50px; /* Adjust height of individual firework */
+    background: radial-gradient(circle, pink, yellow,blue,purple); /* Gradient background */
+    border-radius: 10%;
+    animation: fireworkAnimation 5s infinite;
+   
+  }
+  
+  @keyframes fireworkAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(8);
+      opacity: 1;
+    }
+  }
+  .carau{
+    border-radius: 1em;
+    
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 1em;
+    border-radius: 1em;
+  }
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+  
+  }
+  #countdown {
+    font-size: 5em;
+  }
+  @keyframes countdownAnimation {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  #countdownWrapper {
+    animation: countdownAnimation 3s ease-in-out infinite;
+    display: none;
+  }
+  .me{
+    margin-top: 2em;
+    background-color: bisque;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
