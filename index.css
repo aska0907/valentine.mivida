@@ -143,6 +143,7 @@ padding: 5em;
     animation: falling 6s linear infinite; /* Adjust timing as needed */
   }
 
+
   
   .message {
     font-size: 18px;
@@ -192,7 +193,7 @@ padding: 5em;
     }
   }
   .carau{
-    border-radius: 1em;
+    border-radius: .3em;
     
   }
   .video-container {
@@ -229,4 +230,10 @@ padding: 5em;
     background-color: bisque;
     padding-top: 1em;
     padding-bottom: 1em;
+  }
+  .videoo{
+    margin-top: 1em;
+  }
+  .butto{
+    background-color:orange;
   }
